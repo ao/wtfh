@@ -1,0 +1,108 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen styling */
+body, html, #root {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Dark and light theme containers */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: all 0.5s ease;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Dark theme (default) */
+.app.dark {
+  background: linear-gradient(135deg, #1E1E1E, #333333);
+}
+
+/* Light theme (when wake-up sequence starts) */
+.app.light {
+  background: linear-gradient(135deg, #FFDD44, #FFD700);
+  color: #333333;
+}
+
+/* Main heading styling */
+h1 {
+  font-size: 2.5rem; /* Increased size */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: font-size 0.5s ease;
+}
+
+/* Larger heading for wake-up */
+.app.light h1 {
+  font-size: 4rem;
+}
+
+/* Alarm Form styling */
+.alarm-form {
+  margin-bottom: 20px;
+}
+
+/* Input styling */
+.alarm-form input[type="time"] {
+  font-size: 2rem; /* Increased size */
+  padding: 15px; /* Increased padding */
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Button styling */
+.alarm-form button {
+  margin-top: 10px;
+  padding: 15px 30px; /* Increased padding */
+  font-size: 2rem; /* Increased size */
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #FF4E50;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.alarm-form button:hover {
+  background-color: #F9D423;
+}
+
+/* Countdown and status message styling */
+.app p {
+  font-size: 1.5rem; /* Increased size */
+  margin-top: 10px;
+  transition: font-size 0.5s ease;
+}
+
+/* Larger font for wake-up message */
+.app.light p {
+  font-size: 2rem;
+}
+
+/* Play count styling */
+.play-count {
+  font-size: 2rem; /* Increased size */
+  font-weight: bold;
+  margin-top: 15px;
+  color: #FF4E50;
+  transition: font-size 0.5s ease;
+}
+
+/* Larger play count for wake-up */
+.app.light .play-count {
+  font-size: 2.5rem;
+  color: #FF0000;
+}
