@@ -12,7 +12,9 @@ A web app built in React to help you wake up on time by playing random loud soun
 
 ## Demo
 
-![Screenshot](./screenshot.png) <!-- Add a screenshot of the app here for reference -->
+![Wake Up 1](./docs/wakeup1.png)
+
+![Wake Up 2](./docs/wakeup2.png)
 
 ## Technologies Used
 
