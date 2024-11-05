@@ -29,8 +29,8 @@ To run this app locally, follow these steps:
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/your-username/wtfu-wake-up-app.git
-cd wtfu-wake-up-app
+git clone https://github.com/ao/wtfh.git
+cd wtfh
 ```
 
 2. **Install dependencies:**
