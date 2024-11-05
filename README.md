@@ -34,6 +34,7 @@ cd wtfu-wake-up-app
 ```
 
 2. **Install dependencies:**
+
 ```bash
 npm install
 ```
