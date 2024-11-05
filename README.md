@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# WTFU Wake-Up Alarm App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web app built in React to help you wake up on time by playing random loud sounds at a set time, repeating every 20 seconds until you wake up. The app will display a countdown to the set wake-up time and tracks how many times the alarm has played to motivate you to get up!
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Set a custom wake-up time and start a countdown.
+- Plays random alarm sounds every 20 seconds once the wake-up time is reached.
+- Continues playing sounds until you close the app.
+- Displays how many times the alarm has played to "embarrass" you until you wake up.
+- Responsive, full-screen UI with a dark theme, which brightens up when the alarm goes off.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot](./screenshot.png) <!-- Add a screenshot of the app here for reference -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React** - Frontend library
+- **JavaScript** - Core language for app logic
+- **HTML/CSS** - Structure and styling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup and Installation
 
-### `npm run build`
+To run this app locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/your-username/wtfu-wake-up-app.git
+   cd wtfu-wake-up-app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+2. Install dependencies:
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Add sound files:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- In the `src/sounds/` folder, add multiple `.mp3` sound files to be used as alarms.
+- Update `src/sounds.js` to import and export your sound files.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Run the app:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+The app should now be running at <http://localhost:3000>.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Set Wake-Up Time: Enter your desired wake-up time and press "Set Alarm."
+- Countdown: The app will show a countdown to your wake-up time.
+- Alarm Sequence: Once the wake-up time is reached, the app will start playing sounds every 20 seconds.
+- Embarrassment Counter: Track how many times the alarm has played to keep you accountable!
+- Stop the Alarm: To stop the alarm, close the app.
 
-### Code Splitting
+## File Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+./
+├── public/                  # Public assets
+├── src/
+│   ├── components/          # React components
+│   │   └── AlarmForm.js     # Form component for setting the alarm
+│   ├── sounds/              # Folder for sound files (add your own sounds here)
+│   ├── App.js               # Main app logic
+│   ├── App.css              # Styling
+│   └── sounds.js            # Sound imports and exports
+├── .gitignore
+├── package.json
+└── README.md
+```
 
-### Analyzing the Bundle Size
+## Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Sounds: Add more sounds to the `src/sounds/` directory and import them in `src/sounds.js`.
+- Styling: Modify `src/App.css` to adjust the theme or component sizes.
 
-### Making a Progressive Web App
+## Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Add additional sound categories or allow users to upload their own.
+- Create a mobile app version.
+- Integrate user authentication to save alarm settings.
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you'd like to contribute, please fork the repository and make a pull request with any changes. Suggestions and feedback are welcome!
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
