@@ -26,23 +26,22 @@ To run this app locally, follow these steps:
 
 1. **Clone the repository**:
 
-   ```bash
-   git clone https://github.com/your-username/wtfu-wake-up-app.git
-   cd wtfu-wake-up-app
-
+```bash
+git clone https://github.com/your-username/wtfu-wake-up-app.git
+cd wtfu-wake-up-app
 ```
 
-2. Install dependencies:
+2. **Install dependencies:**
 ```bash
 npm install
 ```
 
-3. Add sound files:
+3. **Add sound files:**
 
 - In the `src/sounds/` folder, add multiple `.mp3` sound files to be used as alarms.
 - Update `src/sounds.js` to import and export your sound files.
 
-4. Run the app:
+4. **Run the app:**
 
 ```bash
 npm start
